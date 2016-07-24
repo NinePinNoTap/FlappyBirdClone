@@ -1,6 +1,7 @@
 #pragma once
 
 #include "cocos2d.h"
+#include "Bird.h"
 #include "Pipe.h"
 
 class GameScene : public cocos2d::Layer
@@ -19,4 +20,5 @@ private:
 
 	cocos2d::PhysicsWorld *sceneWorld;
 	Pipe pipe;
+	Bird* bird;
 };

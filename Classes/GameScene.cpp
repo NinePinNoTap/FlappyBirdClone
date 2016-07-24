@@ -43,6 +43,8 @@ bool GameScene::init()
 	edgeNode->setPhysicsBody(edgeBody);
 	this->addChild(edgeNode);
 
+	bird = new Bird(this);
+
 	this->schedule(schedule_selector(GameScene::SpawnPipe), PIPE_SPAWN_FREQUENCY * visibleSize.width);
 	        
     return true;
