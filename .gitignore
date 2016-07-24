@@ -11,6 +11,15 @@
 *.userprefs
 
 # Build results
+[Cc]ocos2d
+proj.android/
+proj.android-studio/
+proj.ios_mac/
+proj.linux/
+proj.tizen/
+proj.win10/
+proj.win8.1-universal/
+proj.win32/[Dd]ebug.win32/
 [Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/
