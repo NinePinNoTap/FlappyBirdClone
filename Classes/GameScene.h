@@ -11,4 +11,9 @@ public:
 
     // Implement the "static create()" method manually
     CREATE_FUNC(GameScene);
+
+private:
+	inline void SetPhysicsWorld(cocos2d::PhysicsWorld* world) { sceneWorld = world; }
+
+	cocos2d::PhysicsWorld *sceneWorld;
 };
