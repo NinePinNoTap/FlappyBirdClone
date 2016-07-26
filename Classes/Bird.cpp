@@ -18,4 +18,20 @@ Bird::Bird(cocos2d::Layer* layer)
 	flappyBird->setPhysicsBody(flappyBody);
 
 	layer->addChild(flappyBird, 100);
+
+	isFalling = true;
+}
+
+void Bird::Fall()
+{
+	if (isFalling)
+	{
+		flappyBird->setPositionX(visibleSize.width / 2 + origin.x);
+		flappyBird->setPositionY(flappyBird->getPositionY() - (BIRD_FALLING_SPEED * visibleSize.height));
+	}
+	else
+	{
+		flappyBird->setPositionX(visibleSize.width / 2 + origin.x);
+		flappyBird->setPositionY(flappyBird->getPositionY() + (BIRD_FALLING_SPEED * visibleSize.height));
+	}
 }
