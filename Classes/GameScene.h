@@ -18,6 +18,8 @@ private:
 	inline void SetPhysicsWorld(cocos2d::PhysicsWorld* world) { sceneWorld = world; }
 	void SpawnPipe(float dt);
 
+	bool onContactBegin(cocos2d::PhysicsContact &contact);
+
 	cocos2d::PhysicsWorld *sceneWorld;
 	Pipe pipe;
 	Bird* bird;
